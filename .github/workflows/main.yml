@@ -1,0 +1,110 @@
+<html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajey Sanskrit</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background: #8B4513;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #8B4513;
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background: #8B4513;
+            color: white;
+        }
+        .data-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function searchFunction() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const items = document.getElementsByClassName("data-item");
+
+            for (let i = 0; i < items.length; i++) {
+                const text = items[i].textContent || items[i].innerText;
+                items[i].style.display = text.toLowerCase().includes(input) ? "" : "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Ajey Sanskrit</h1>
+    <nav>
+        <a href="#data">डेटा</a>
+        <a href="#search">सर्च</a>
+        <a href="#about">हमारे बारे में</a>
+    </nav>
+</header>
+
+<section id="data">
+    <h2>संस्कृत डेटा</h2>
+    
+    <h3>मुख्य विषय</h3>
+    <div class="data-item">वेद: हिन्दू धर्म के प्रमुख ग्रंथ। चार वेद हैं: ऋग्वेद, यजुर्वेद, सामवेद, और अथर्ववेद।</div>
+    <div class="data-item">उपनिषद: वेदों के अंतिम भाग, जो वेदांत का आधार हैं। ज्ञान और दर्शन के बारे में गहन चर्चा करते हैं।</div>
+    <div class="data-item">पुराण: प्राचीन कथाएँ और इतिहास का संग्रह, जैसे विष्णु पुराण, शिव पुराण।</div>
+    <div class="data-item">संस्कृत व्याकरण: पाणिनि द्वारा लिखा गया, जिसमें अष्टाध्यायी और अन्य ग्रंथ शामिल हैं।</div>
+    <div class="data-item">संस्कृत साहित्य: संस्कृत में लिखे गए कविताएँ, नाटक, और अन्य साहित्यिक रचनाएँ।</div>
+    <div class="data-item">धातु: क्रियाएँ और उनके रूप। उदाहरण: गम (जाना), पठ (पढ़ना)।</div>
+    <div class="data-item">प्रत्यय: शब्दों के अंत में जोड़ने वाले तत्व, जैसे -ता, -क।</div>
+    <div class="data-item">उपसर्ग: शब्दों के आरंभ में जोड़ने वाले तत्व, जैसे: प्र-, अप-, अ-।</div>
+
+</section>
+
+<section id="search">
+    <h2>डेटा खोजें</h2>
+    <input type="text" id="searchInput" placeholder="यहाँ खोजें..." style="width: 100%; padding: 10px;" onkeyup="searchFunction()">
+    <p>आप अपनी आवश्यकताओं के अनुसार डेटा खोज सकते हैं।</p>
+</section>
+
+<section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>Ajey Sanskrit वेबपेज संस्कृत भाषा के सभी प्रकार के डेटा को संग्रहित करने और उसे सर्चेबल बनाने के लिए डिज़ाइन किया गया है। यह पब्लिक डोमेन में सभी के लिए उपलब्ध है।</p>
+</section>
+
+<footer>
+    <p>© 2024 Ajey Sanskrit. सभी अधिकार सुरक्षित।</p>
+    <p>URL: http://yourdomain.com/ajey_sanskrit</p>
+</footer>
+
+</body>
+</html>
+
+**Full Changelog**: https://github.com/ajeyAnto0Sanskrit/ajey_0toAn-sanskrit/commits/ajey_sanskrit
